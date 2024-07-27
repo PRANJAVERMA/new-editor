@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Code Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+`Code Editor` is a web-based application designed for real-time code editing and collaboration. Users can create and join rooms to edit the code in all the language. The application uses CodeMirror for advanced code editing features.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Room Creation**: Generate a unique room ID and enter a username to create or join a collaborative coding environment.
+- **Real-time Collaboration**: Collaborate with others in real-time using socket connections. Changes are synced instantly across all users in the room.
+- **Code Editing**: Utilize CodeMirror for editing HTML, CSS, and JavaScript code with advanced features like syntax highlighting and auto-completion.
+- **Live Preview**: Execute code and see the results in a live preview pane.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To set up `Code Editor` locally, follow these steps:
 
-### `npm test`
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/code-editor.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigate to the Project Directory**:
+    ```bash
+    cd code-editor
+    ```
 
-### `npm run build`
+3. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Start the Development Server**:
+    ```bash
+    npm start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   The application will be available at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. **Generating a Room ID**:
+   On the home page, click the button to generate a unique room ID. Enter your username and click "Join" to create or join a room.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Joining a Room**:
+   Enter the room ID and your username to join an existing room where you can start coding with others.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Editing Code**:
+   On the code editor page, use CodeMirror to edit HTML, CSS, and JavaScript. Click the "Run" button to view the output in the live preview pane.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Configuration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Environment Variables
 
-## Learn More
+Ensure that you have the following environment variables set up:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `REACT_APP_SOCKET_SERVER`: URL of the socket server (e.g., `http://localhost:3008`).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! Please submit a pull request or open an issue for any bugs or feature requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgements
 
-### Making a Progressive Web App
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [CodeMirror](https://codemirror.net/) - Code editor component for the browser.
+- [Socket.IO](https://socket.io/) - Real-time communication library for web applications.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
